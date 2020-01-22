@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 리스트와 테이블</title>
+
+<style>
+    ul  { 
+        background-color: darkorange;
+        list-style-type: square; /* list type*/
+        list-style-image: url(https://image.flaticon.com/icons/svg/1738/1738919.svg);
+        list-style-position: outside;
+    }
+
+    .inside {list-style-position: inside}
+
+    ol{list-style-type: lower-alpha
+
+    }
+
+    .shorthand {list-style: disc; url(https://image.flaticon.com/icons/svg/419/419031.svg)}
+table, td {border: 1px solid black}
+    .table {border-collapse: collapse; font-size: 30px}
+    td {width: 50px; height: 100px;}
+    .bottom {vertical-align: top}
+
+</style>
+
+
+
+
+</head>
+<body>
+    <h1>CSS 리스트</h1>
+    <ul>
+        <li>qn</li>
+        <li>qsdzxc</li>
+        <li>asd</li>
+        <li>zxc</li>
+        <li>qwe</li>
+        <li>zsd</li>
+        <li>a</li>
+    </ul>
+
+        <br><hr><br>
+    <h2>순서없는 리스트</h2>
+
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        
+    </ul>
+    <div class="inside"></div>
+
+    <h2>순서있는 리스트</h2>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <div class="shorthand"></div>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    
+        <br><hr><br>
+        <h1>css 테이블</h1>
+        <table>
+            <tr class="bottom">
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            
+            </tr>
+        </table>
+
+</body>
+</html>

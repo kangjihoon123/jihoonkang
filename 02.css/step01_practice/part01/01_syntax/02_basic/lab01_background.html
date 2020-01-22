@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 색상 및 배경</title>
+
+    <style>
+        .bgimg{ background-image: url(https://image.flaticon.com/icons/svg/2502/2502831.svg);
+            /*가로폭 */
+            width: 240px;
+            /*세로폭*/
+            height: 120px;
+            
+            background-repeat: no-repeat;
+            background-repeat: repeat-x; /*가로방향 반복*/
+            background-repeat: repeat-y; /*세로방향 반복*/
+
+
+        }
+        .bgposition { background-color: beige; height: 400px;
+                        background-image: url(https://image.flaticon.com/icons/svg/421/421167.svg);
+                        font-size:20px;
+                        background-repeat: no-repeat;
+                        background-position: right top;
+
+
+        }
+        .bgattachment { background-image: url(https://image.flaticon.com/icons/svg/1738/1738919.svg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-attachment: fixed;
+            font-size:40px;
+
+                    }
+        .bgshorthand { background: skyblue url(https://image.flaticon.com/icons/svg/421/421167.svg) no-repeat fixed 5px 
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+
+                    }
+        .bgsize { height: 240px;
+                    background-image: url(https://image.flaticon.com/icons/svg/421/421167.svg);
+                background-size: contain ; /*모든 이미지가 보일 수 잇게 가장 짧은 면을 기준으로 사이즈 변경*/
+                /*cover는 가장 긴 면을 기준으로 덮어줄 수 있게 설정*/
+                background-size: 10% 50%; /* px(절대적) %(상대적) 등으로 사이즈 조절 가능*/
+        }
+
+        .bggradient { height: 500px;
+            /*본인이 쓰고 싶은 색깔의 수 N-1분의 1씩 % 지정*/
+            background-image: linear-gradient( to top right, #ff896b 0%, #e8d4b4 33%, #ebe6e6 66%, #f3f3f3 100%)
+
+
+
+
+        }
+    .bginsta {
+        height: 500px;
+        background-image: linear-gradient( 45deg /*방향*/ #f09433 0%, #e6683  dc2743 cc2366 bc1888)
+        /
+    }
+    </style>
+
+</head>
+
+<body>
+     <h1>색상</h1>
+     <p style="color: red;">빨간색</p>
+     <p style="color: rgb(255, 0,255);">빨간색(rgb)</p>
+     <p style="color: #ff0000;">빨간색(hex)</p>
+     <p style="color: #e1f2fb;">1(hex)</p>
+     <p style="color: #ff0000;">2(hex)</p>
+     <p style="color: #ff0000;">3(hex)</p>
+    <br><br>
+    
+    <h1>배경</h1>
+    <div style="background-color: lightcyan;">배경색 지정입니다.</div>
+    <div style="background-color: rgb(254, 255, 255);">배경색 지정입니다.</div>
+    <h2>배경 이미지</h2>
+    <div class="bgimg">배경이미지 입니다.</div>
+    <h2>배경포지션</h2>
+    <div class="bgposition">배경 위치 설정</div>
+    <br><br>
+    <h2>배경 고정</h2>
+    <div class="bgattachment">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nulla quod molestiae, eaque deleniti at reiciendis, dolorem numquam, aperiam tempore assumenda rem! 
+        Fugiat unde dolorem magni ducimus explicabo, voluptate impedit sapiente quam facere, aliquid eius quasi 
+        doloremque rerum neque. Praesentium sapiente exercitationem incidunt doloremque necessitatibus! Iste ipsa rem ex consectetur ipsum.
+        Nulla quod molestiae, eaque deleniti at reiciendis, dolorem numquam, aperiam tempore assumenda rem! 
+        Fugiat unde dolorem magni ducimus explicabo, voluptate impedit sapiente quam facere, aliquid eius quasi 
+        doloremque rerum neque. Praesentium sapiente exercitationem incidunt doloremque necessitatibus! Iste ipsa rem ex consectetur ipsum.
+        Nulla quod molestiae, eaque deleniti at reiciendis, dolorem numquam, aperiam tempore assumenda rem! 
+        Fugiat unde dolorem magni ducimus explicabo, voluptate impedit sapiente quam facere, aliquid eius quasi 
+        doloremque rerum neque. Praesentium sapiente exercitationem incidunt doloremque necessitatibus! Iste ipsa rem ex consectetur ipsum.
+        
+   
+    </div>
+    <br><br>
+    <div class="bgshorthand"></div>
+    
+    <br><br>
+    <div class="bgsize">배경크기를 설정하겠습니다.</div>
+
+    <br><br>
+    <h2>배경 그라디언트</h2>
+    <div class="bggradient">인스타그램처럼!!</div>
+</body>
+</html>
